@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+// 폰트 믹스인
+@mixin font-base($weight, $size, $line-height, $letter-spacing: null) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}
+
+@mixin display1 {
+  @include font-base(600, 88px, 96px, -0.05em);
+}
+
+// 제목 스타일 믹스인
+@mixin heading1 {
+  @include font-base(600, 44px, 48px, -0.05em);
+}
+
+@mixin heading2 {
+  @include font-base(600, 36px, 45px, -0.04em);
+}
+
+@mixin heading3 {
+  @include font-base(600, 28px, 35px, -0.03em);
+}
+
+@mixin heading4 {
+  @include font-base(600, 20px, 25px, -0.02em);
+}
+
+// 본문 스타일 믹스인
+@mixin body {
+  @include font-base(400, 16px, 24px);
+}
+
+@mixin body-bold {
+  @include font-base(600, 16px, 24px);
+}
+
+// 메타 스타일 믹스인
+@mixin meta {
+  @include font-base(400, 14px, 24px);
+}

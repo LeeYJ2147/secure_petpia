@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+// 변수 선언
+$columns: 12;
+$gutter: 40px;
+$padding: 20px;
+
+.grid {
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gutter;
+  padding: $padding $padding 160px;
+}
+
+// 컬럼 너비 계산 (여백을 고려)
+$column-width: calc((1280px - (#{$gutter} * (#{$columns} - 1))) / #{$columns});
+
+// 반복문을 사용하여 col-1부터 col-12까지 생성
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    grid-column: span #{$i} / span #{$i};
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../styles/mixins.scss";
+
+.footer-nav-item {
+  @include heading3;
+  color: $radiant-orange;
+}
+
+.footer-contact {
+  @include heading4;
+}
+
+.footer-follow {
+  @include heading4;
+}

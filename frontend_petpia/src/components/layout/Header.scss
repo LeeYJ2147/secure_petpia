@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+.nav-item {
+  @include heading1;
+  color: #ff4f18;
+  list-style: none;
+}
+
+.contact-info {
+  @include heading4;
+}
+
+.menu {
+  @include heading4;
+  text-align: end;
+}
+
+.active {
+  color: black !important;
+}

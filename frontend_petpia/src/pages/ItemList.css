@@ -1,0 +1,17 @@
+/* src/components/ItemList.css */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.item-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+}
+
+.item-card img {
+  max-width: 100%;
+  height: auto;
+}

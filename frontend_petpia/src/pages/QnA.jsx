@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Grid from "../components/common/Grid";
 import Column from "../components/common/Column";
 import "./QnA.scss";
@@ -25,7 +26,9 @@ function QnA() {
           <tbody>
             <tr>
               <td>답변완료</td>
-              <td>불마운트 볼 사이즈가 어떻게 될까요?</td>
+              <td>
+                <Link to="/qnadetail">불마운트 볼 사이즈가 어떻게 될까요?</Link>
+              </td>
               <td>mugu****</td>
               <td>2024.04.30</td>
             </tr>

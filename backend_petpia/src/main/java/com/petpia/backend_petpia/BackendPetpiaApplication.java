@@ -2,6 +2,8 @@ package com.petpia.backend_petpia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import com.petpia.backend_petpia.config.JwtProperties;
 
 @SpringBootApplication
 public class BackendPetpiaApplication {

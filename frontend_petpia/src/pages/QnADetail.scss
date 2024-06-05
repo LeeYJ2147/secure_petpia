@@ -1,0 +1,33 @@
+@import "../styles/mixins.scss";
+.qna-title {
+  @include heading2;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.question-meta,
+.answer-meta {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.question-content,
+.answer-content {
+  @include body;
+}
+
+.answer-section {
+  h2 {
+    @include heading4;
+    margin-bottom: 10px;
+  }
+}
+
+.navigation {
+  a {
+    @include meta;
+  }
+}
